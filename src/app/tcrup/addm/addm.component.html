@@ -1,0 +1,93 @@
+<div class="content-wrapper" style="min-height: 1244.06px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-sm-6">
+            <a href="#" class="btn btn-success" [routerLink]="['/formm']" routerLinkActive="router-link-active" >เพิ่มวัตถุดิบ <i class="fas fa-arrow-circle-right"></i></a>
+          </div> 
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    
+<!-- 
+    <li *ngFor="let mat of materialList">
+
+      <div class="col-lg-3">
+
+        <div class="small-box bg-info">
+            <div class="inner">
+
+                <p>{{mat.material_name}}</p>
+            </div>
+            <div class="icon">
+               
+            </div>
+            </div>
+      </div>
+
+    </li> -->
+
+    <div class="card card-success">
+            <div class="card-header">
+              <h3 class="card-title">Files</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                  <i class="fas fa-minus"></i></button>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <table class="table">
+                <!-- <thead>
+                  <tr>
+                    <th>File Name</th>
+                    <th>File Size</th>
+                    <th>File Size</th>
+                    <th>File Size</th>
+                    <th>File Size</th>
+                    <th>File Size</th>
+                    <th>File Size</th>
+
+                    <th></th>
+                  </tr>
+                </thead> -->
+                <li *ngFor="let mat of materialList">
+                  <div class="row ">
+                    <div class="col-sm-6">
+                <tbody>
+
+                  <tr>
+                    <td>{{mat.metarial_id}}</td>
+                    <td>{{mat.material_name}}</td>
+                    <td>{{mat.quantity}}</td>
+                    <td>{{mat.weight}}</td>
+                    <td>{{mat.remain}}</td>
+                    <td>{{mat.production_id}}</td>
+                    <td>{{mat.capacity_id}}</td>
+                    <td class="text-right py-0 align-middle">
+                      <div class="btn-group btn-group-sm">
+                        <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                      </div>
+                    </td>
+                  </tr></tbody>
+                </div> 
+              </div>
+                </li>
+
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+
+
+
+
+  
+    
+
+
+
+  </div>

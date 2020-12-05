@@ -1,0 +1,131 @@
+<div class="content-wrapper" style="min-height: 1244.06px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>เพิ่มวัตถุดิบ</h1>
+          </div>
+          <div class="col-sm-6">
+
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- right column -->
+          <div class="col-md-12">
+            <!-- general form elements disabled -->
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">เพิ่มวัตถุดิบ</h3>
+              </div>
+              <!-- /.card-header --> 
+              <div class="card-body">
+
+
+
+
+                <form [formGroup]=addForm>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>รหัสวัตถุดิบ</label>
+                        <input formControlName="metarial_id" type="text" class="form-control" placeholder="001,002 ...">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>จำนวน</label>
+                        <input formControlName="quantity" type="text" class="form-control" placeholder="จำนวน ..." >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>ชื่อวัตถุดิบ</label>
+                        <input formControlName="material_name" type="text" class="form-control" placeholder="ชื่อวัตถุดิบ ...">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>น้ำหนัก/หน่วย</label>
+                        <input formControlName="weight" type="text" class="form-control" placeholder="น้ำหนักต่อชิ้น ..." >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>คงเหลือ</label>
+                        <input formControlName="remain" type="text" class="form-control" placeholder="คงเหลือ ...">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>นำไปผลิตสินค้า</label>
+                        <input formControlName="production_id" type="text" class="form-control" placeholder="ในรห้สสินค้าที่จะนำไปผลิต ..." >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>หน่วยนับ</label>
+                        <input formControlName="capacity_id" type="text" class="form-control" placeholder="ชิ้น,ถุง ...">
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  <!-- input states -->
+                  <!-- <div class="form-group">
+                    <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i>คงเหลือ</label>
+                    <input formControlName="remain" type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputWarning"><i class="far fa-bell"></i>นำไปผลิตสินค้า</label>
+                    <input formControlName="production_id" type="text" class="form-control is-warning" id="inputWarning" placeholder="Enter ...">
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label" for="inputError"><i class="far fa-times-circle"></i>หน่วยนับ</label>
+                    <input formControlName="capacity_id" type="text" class="form-control is-invalid" id="inputError" placeholder="Enter ...">
+                  </div> -->
+
+                  <!-- <button aria-label="submit" type="submit" (click)="onClickRegis()"></button> -->
+
+                  <td>
+                    <button aria-label="submit" type="button" class="btn btn-block btn-success"(click)="onClickRegis()">ยืนยัน</button>
+                  </td>
+                </form>
+
+
+
+
+
+
+
+
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
